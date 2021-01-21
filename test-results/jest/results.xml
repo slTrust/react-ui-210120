@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="0" time="2.558">
-  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-01-21T07:43:00" time="0.797" tests="1">
-    <testcase classname="我的第一个测试用例 1 等于 1" name="我的第一个测试用例 1 等于 1" time="0.003">
+<testsuites name="jest tests" tests="9" failures="0" time="6.569">
+  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-01-21T09:52:59" time="2.707" tests="1">
+    <testcase classname="我的第一个测试用例 1 等于 1" name="我的第一个测试用例 1 等于 1" time="0.005">
     </testcase>
   </testsuite>
-  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-01-21T07:43:00" time="0.988" tests="5">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2021-01-21T09:52:59" time="3.593" tests="1">
+    <testcase classname="button 是个 div" name="button 是个 div" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-01-21T09:52:59" time="3.607" tests="5">
     <testcase classname="classes 接受一个 className" name="classes 接受一个 className" time="0.003">
     </testcase>
     <testcase classname="classes 接受两个 className" name="classes 接受两个 className" time="0">
     </testcase>
-    <testcase classname="classes 接受 正常值 和 undefined " name="classes 接受 正常值 和 undefined " time="0">
+    <testcase classname="classes 接受 正常值 和 undefined " name="classes 接受 正常值 和 undefined " time="0.001">
     </testcase>
-    <testcase classname="classes 接受  各种 falsy值 " name="classes 接受  各种 falsy值 " time="0.001">
+    <testcase classname="classes 接受  各种 falsy值 " name="classes 接受  各种 falsy值 " time="0">
     </testcase>
     <testcase classname="classes 接受 0 个参数" name="classes 接受 0 个参数" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2021-01-21T07:43:00" time="1.033" tests="1">
-    <testcase classname="button 是个 div" name="button 是个 div" time="0.009">
+  <testsuite name="Icon" errors="0" failures="0" skipped="0" timestamp="2021-01-21T09:52:59" time="3.664" tests="2">
+    <testcase classname="Icon 是个 icon" name="Icon 是个 icon" time="0.02">
     </testcase>
-  </testsuite>
-  <testsuite name="Icon" errors="0" failures="0" skipped="0" timestamp="2021-01-21T07:43:00" time="1.066" tests="2">
-    <testcase classname="Icon 是个 icon" name="Icon 是个 icon" time="0.01">
-    </testcase>
-    <testcase classname="Icon onClick" name="Icon onClick" time="0.025">
+    <testcase classname="Icon onClick" name="Icon onClick" time="0.03">
     </testcase>
   </testsuite>
 </testsuites>
