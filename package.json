@@ -1,10 +1,12 @@
 {
   "name": "react-ui-dev-01",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/lib/index",
   "types": "dist/lib/index",
-  "files":["/dist/**/*"],
+  "files": [
+    "/dist/**/*"
+  ],
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
