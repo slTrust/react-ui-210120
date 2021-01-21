@@ -1,7 +1,7 @@
 module.exports = {
   verbose: true,
   clearMocks: false,
-  reporters: ["default"],
+  reporters: ["default","jest-junit"],
 
   // 是否收集测试覆盖率
   collectCoverage: true,
