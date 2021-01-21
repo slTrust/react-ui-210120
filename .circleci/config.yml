@@ -74,3 +74,9 @@ workflows:
       - publish:
           requires:
             - build
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
+            # 忽略所有分支，我只看 tag
+            branches:
+              ignore: /.*/
