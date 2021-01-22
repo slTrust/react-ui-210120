@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import Dialog,{alert} from "./dialog";
+import Dialog,{alert,confirm,modal} from "./dialog";
 
 const ButtonExample: React.FC = () => {
   const [x, setX] = useState(false);
   const [x2, setX2] = useState(false);
+  const openModal = () => {
+    const close = modal(<h1>你好<button onClick={()=>close()}>关闭</button></h1>)
+  }
   return (
     <div>
       <div>
@@ -33,6 +36,19 @@ const ButtonExample: React.FC = () => {
          <h1>example3</h1>
          <button onClick={()=>alert('hi')}>alert</button>
       </div>
+        <div>
+            <h1>example4</h1>
+            <button onClick={()=>confirm('1',()=>{
+                console.log('你点击了yes');
+            },()=>{
+                console.log('你点击了no');
+            })}>confirm</button>
+        </div>
+        <div>
+            <h1>example5</h1>
+            <button onClick={openModal}>modal</button>
+        </div>
+
     </div>
   );
 };
