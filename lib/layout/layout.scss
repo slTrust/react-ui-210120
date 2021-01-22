@@ -2,19 +2,24 @@
 .fui-layout{
   display: flex;
   flex-direction: column;
-  &.hasAside{
+
+  &-content{
+    flex-grow: 1;
+  }
+  &  &{
+    flex-grow: 1;
+    flex-direction: row;
+  }
+  &-hasAside{
     flex-direction: row;
     .fui-layout{
       flex-direction: column;
     }
   }
-  &-content{
-    flex-grow: 1;
-    background: green;
-  }
-  &  &{
-    flex-grow: 1;
-    background: pink;
-    flex-direction: row;
-  }
+
+  &-header{background: #0074D9;}
+  &-footer{background: #1890ff;}
+  &-aside{background: #7f7f7f;}
+  &-content{background: aquamarine}
+  &{background: #F6C6CE;}
 }
