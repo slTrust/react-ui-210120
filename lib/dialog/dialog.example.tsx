@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dialog from "./dialog";
+import Dialog,{alert} from "./dialog";
 
 const ButtonExample: React.FC = () => {
   const [x, setX] = useState(false);
@@ -28,6 +28,10 @@ const ButtonExample: React.FC = () => {
         >
           <strong>hi2</strong>
         </Dialog>
+      </div>
+      <div>
+         <h1>example3</h1>
+         <button onClick={()=>alert('hi')}>alert</button>
       </div>
     </div>
   );
