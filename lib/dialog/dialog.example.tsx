@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Dialog,{alert,confirm,modal} from "./dialog";
+import Dialog,{alert,confirm,model} from "./dialog";
 
 const ButtonExample: React.FC = () => {
   const [x, setX] = useState(false);
   const [x2, setX2] = useState(false);
-  const openModal = () => {
-    const close = modal(<h1>你好<button onClick={()=>close()}>关闭</button></h1>)
+  const openModel = () => {
+    const close = model(<h1>你好<button onClick={()=>close()}>关闭</button></h1>)
   }
   return (
     <div>
@@ -46,7 +46,7 @@ const ButtonExample: React.FC = () => {
         </div>
         <div>
             <h1>example5</h1>
-            <button onClick={openModal}>modal</button>
+            <button onClick={openModel}>model</button>
         </div>
 
     </div>
