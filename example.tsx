@@ -8,15 +8,18 @@ import DialogExample from "./lib/dialog/dialog.example";
 import LayoutExample from "./lib/layout/layout.example";
 import { Layout, Aside, Header, Content, Footer } from "./lib/layout/layout";
 import "./example.scss";
-
+const logo = require('./logo.png');
 ReactDOM.render(
   <Router>
-    <Layout style={{ border: "1px solid red" }} className="page">
-      <Header style={{ border: "1px solid green" }}>
-        <div className="logo">FUI</div>
+    <Layout className="site-page">
+      <Header className="site-header">
+        <div className="logo">
+            <img src={logo} alt="" style={{background:'#eee'}} width="48" height="48"/>
+            <span>Deer UI</span>
+        </div>
       </Header>
       <Layout>
-        <Aside style={{ border: "1px solid blue" }}>
+        <Aside className="site-aside">
           <h2>组件</h2>
           <ul>
             <li>
@@ -33,14 +36,14 @@ ReactDOM.render(
             </li>
           </ul>
         </Aside>
-        <Content>
+        <Content className="site-main">
           <Route path="/icon" component={IconExample} />
           <Route path="/button" component={ButtonExample} />
           <Route path="/dialog" component={DialogExample} />
           <Route path="/layout" component={LayoutExample} />
         </Content>
       </Layout>
-      <Footer style={{ border: "12px solid black" }}>footer</Footer>
+      <Footer className="site-footer">footer</Footer>
     </Layout>
   </Router>,
   document.querySelector("#root")
